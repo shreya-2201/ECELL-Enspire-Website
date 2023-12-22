@@ -1,8 +1,11 @@
 import React, { useState, useCallback, useEffect, useRef } from "react";
 import logo from "./enspire-logo-circle.png";
-import bgvid from "./bg_vid"
+import bgvid from "./bg_vid";
+import insta from "./insta.png";
+import facebook from "./facebook.png";
+import twitter from "./twitter.png";
 import "./App.css";
-
+import Home from "./home";
 
 function App() {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
@@ -17,8 +20,14 @@ function App() {
 
   return (
     <>
-    <div>
-    <video src={bgvid} autoPlay loop muted className="absolute w-full h-full object-cover z-0"/>
+      <div>
+        <video
+          src={bgvid}
+          autoPlay
+          loop
+          muted
+          className="absolute w-full h-full object-cover z-0"
+        />
         <nav className="w-full bg-purple-900/40 backdrop-blur-sm ">
           <div className="flex justify-between items-center">
             <div className="flex items-center">
@@ -88,42 +97,60 @@ function App() {
           </div>
         </nav>
         {isSidebarOpen && (
-              <div className="side-bar md:hidden bg-purple-900/30 backdrop-blur-sm p-5 flex h-auto flex-col ">
-                <a
-                  href="#"
-                  className="text-white w-full  text-center p-4  hover:bg-purple-900/50"
-                >
-                  Home
-                </a>
-                <a
-                  href="#"
-                  className="text-white w-full text-center p-4 hover:bg-purple-900/50"
-                >
-                  Our Events
-                </a>
-                <a
-                  href="#"
-                  className="text-white w-full text-center p-4 hover:bg-purple-900/50"
-                >
-                  Our Sponsors
-                </a>
-                <a
-                  href="#"
-                  className="text-white w-full text-center p-4 hover:bg-purple-900/50"
-                >
-                  Teams
-                </a>
-                <div class="icons">
-                    <a href="https://www.instagram.com/" target="_blank"><img src="insta.png" alt="" class="icon"/></a>
-                    <a href="https://www.facebook.com/" target="_blank"><img src="facebook.png" alt="" class="icon"/></a>
-                    <a href="https://www.twitter.com/" target="_blank"><img src="twitter.png" alt="" class="icon"/></a>
-                </div>
-              </div>
-            )}
-
-            
+          <div className="side-bar md:hidden bg-purple-900/30 backdrop-blur-sm p-5 flex h-auto flex-col ">
+            <a
+              href="#"
+              className="text-white w-full  text-center p-4  hover:bg-purple-900/50"
+            >
+              Home
+            </a>
+            <a
+              href="#"
+              className="text-white w-full text-center p-4 hover:bg-purple-900/50"
+            >
+              Our Events
+            </a>
+            <a
+              href="#"
+              className="text-white w-full text-center p-4 hover:bg-purple-900/50"
+            >
+              Our Sponsors
+            </a>
+            <a
+              href="#"
+              className="text-white w-full text-center p-4 hover:bg-purple-900/50"
+            >
+              Teams
+            </a>
+            <div className="flex flex-row justify-end space-x-4 mt-2 ">
+              <a href="https://www.instagram.com/" target="_blank">
+                <img
+                  src={insta}
+                  alt=""
+                  className="w-10 icon bg-purple-900/40 backdrop-blur-sm p-0.5 rounded-full"
+                />
+              </a>
+              <a href="https://www.facebook.com/" target="_blank">
+                <img
+                  src={facebook}
+                  alt=""
+                  className="w-10 icon bg-purple-900/40 backdrop-blur-sm p-0.5 rounded-full"
+                />
+              </a>
+              <a href="https://www.twitter.com/" target="_blank">
+                <img
+                  src={twitter}
+                  alt=""
+                  className="w-10 icon bg-purple-900/40 backdrop-blur-sm p-0.5 rounded-full"
+                />
+              </a>
             </div>
+          </div>
+        )}
+      </div>
+      <Home />
     </>
+
   );
 }
 

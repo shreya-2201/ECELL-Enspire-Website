@@ -31,7 +31,13 @@
   }
 }
 @keyframes side-bar {
-  0%{transform: translateY(-200px);}
+  0%{transform: translateY(-350px);}
   100%{transform: translateY(0px);}
 }
 
+.icon{
+  transition: transform 0.3s ease;
+}
+.icon:hover{
+  transform: scale(1.2);
+}
