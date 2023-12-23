@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo infinite 4s linear;
+    }
+  }
+  
+  @keyframes App-logo {
+    0% {
+      transform:scale(1);
+    }
+    25% {
+      transform:scale(1.1);
+    }
+    50% {
+      transform:scale(1.3);
+    }
+    75% {
+      transform:scale(1.1);
+    }
+    100% {
+      transform:scale(1);
+    }
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .side-bar {
+      animation: side-bar 1 1s ease-in-out;
+    }
+  }
+  @keyframes side-bar {
+    0%{transform: translateY(-350px);}
+    100%{transform: translateY(0px);}
+  }
+
+  
+  .icon{
+    transition: transform 0.3s ease;
+  }
+  .icon:hover{
+    transform: scale(1.2);
+  }
+  
+
