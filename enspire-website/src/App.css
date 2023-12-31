@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+*{
+  font-family: 'Permanent Marker', cursive;
+}
+
 
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
@@ -51,5 +56,71 @@
   .icon:hover{
     transform: scale(1.2);
   }
+
+  .hover{
+    transition: transform 0.3s ease-in-out;
+  }
+  .hover:hover{
+    transform:scale(0.9);
+  }
+
+
+
+  .heading{
+    animation: bounce 4s infinite;
+  }
+  @keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateX(0) scale(1.2);
+    }
+    40% {
+      transform: translateY(-10px) scale(0.9);
+      opacity:0.5;
+    }
+    60% {
+      opacity:0.8;
+      transform: translateX(-25px) scale(0.8);
+    }
+  }
+
+  .subheading{
+    opacity:0;
+    animation:fade 4s infinite;
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+
+
+  .blend-video {
+    mix-blend-mode:multiply;
+  }
+  
+  .blend-div {
+    mix-blend-mode:multiply;
+  }
+
+  .merch{
+    animation:enlarge 2s infinite;
+  }
+   @keyframes enlarge{
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.15);
+    }
+   }
+  
+
   
 

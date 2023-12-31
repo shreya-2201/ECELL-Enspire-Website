@@ -1,7 +1,7 @@
 import React from "react";
 import {Link,NavLink} from 'react-router-dom'
 import { useState, useCallback, useEffect, useRef } from "react";
-import logo from "../assets/enspire-logo-circle.png";
+import logo from "../assets/E-logo-circle.png";
 import insta from "../assets/insta.png";
 import facebook from "../assets/facebook.png";
 import twitter from "../assets/twitter.png";
@@ -70,25 +70,25 @@ function Header() {
               >
                 <NavLink
                   to="/"
-                  className={({isActive})=>'text-white text-center p-4 w-40  hover:bg-purple-900/50 ${isActive? "text-gray-700":"text-white"}'}
+                  className={({isActive})=>`text-white text-center p-4 w-40  hover:bg-purple-900/50 ${isActive? 'text-gray-700':'text-white'}`}
                 >
                   Home
                 </NavLink>
                 <NavLink
                   to="/events"
-                  className={({isActive})=>'text-white text-center p-4 w-40  hover:bg-purple-900/50 ${isActive? "text-gray-700":"text-white"}'}
+                  className={({isActive})=>`text-white text-center p-4 w-40  hover:bg-purple-900/50 ${isActive? "text-gray-700":"text-white"}`}
                 >
                   Events
                 </NavLink>
                 <NavLink
                   to="/sponsers"
-                  className={({isActive})=>'text-white text-center p-4 w-40  hover:bg-purple-900/50 ${isActive? "text-gray-700":"text-white"}'}
+                  className={({isActive})=>`text-white text-center p-4 w-40  hover:bg-purple-900/50 ${isActive? "text-gray-700":"text-white"}`}
                 >
                   Sponsers
                 </NavLink>
                 <NavLink
                   to="/teams"
-                  className={({isActive})=>'text-white text-center p-4 w-40  hover:bg-purple-900/50 ${isActive? "text-gray-700":"text-white"}'}
+                  className={({isActive})=>`text-white text-center p-4 w-40  hover:bg-purple-900/50 ${isActive? "text-gray-700":"text-white"}`}
                 >
                   Teams
                 </NavLink>
@@ -96,37 +96,37 @@ function Header() {
             </div>
           </nav>
           {isSidebarOpen && (
-            <div className="z-50 absolute side-bar md:hidden bg-purple-900/40 backdrop-blur-sm p-5 flex h-auto flex-col w-screen">
+            <div className="z-50 absolute side-bar md:hidden bg-purple-900/40 backdrop-blur-3xl  flex h-auto flex-col w-full">
               <NavLink
                 to="/"
                 onClick={handleNavLinkClick}
-                className={({isActive})=>'text-white w-full  text-center p-4  hover:bg-purple-900/50 ${isActive? "text-gray-700":"text-white"}'}
+                className={({isActive})=>'text-white w-full  text-center p-4  hover:bg-purple-900/60 ${isActive? "text-gray-700":"text-white"}'}
               >
                 Home
               </NavLink>
               <NavLink
                 to="/events"
                 onClick={handleNavLinkClick}
-                className={({isActive})=>'text-white w-full  text-center p-4  hover:bg-purple-900/50 ${isActive? "text-gray-700":"text-white"}'}
+                className={({isActive})=>`text-white w-full  text-center p-4  hover:bg-purple-900/60 ${isActive? "text-gray-700":"text-white"}`}
               >
                 Events
               </NavLink>
               <NavLink
                 to="/sponsers"
                 onClick={handleNavLinkClick}
-                className={({isActive})=>'text-white w-full  text-center p-4  hover:bg-purple-900/50 ${isActive? "text-gray-700":"text-white"}'}
+                className={({isActive})=>`text-white w-full  text-center p-4  hover:bg-purple-900/60 ${isActive? "text-gray-700":"text-white"}`}
               >
                 Sponsers
               </NavLink>
               <NavLink
                 to="/teams"
                 onClick={handleNavLinkClick}
-                className={({isActive})=>'text-white w-full  text-center p-4  hover:bg-purple-900/50 ${isActive? "text-gray-700":"text-white"}'}
+                className={({isActive})=>`text-white w-full  text-center p-4  hover:bg-purple-900/60 ${isActive? "text-gray-700":"text-white"}`}
               >
                 Teams
               </NavLink>
               
-              <div className="flex flex-row justify-end space-x-4 mt-2 ">
+              <div className="flex flex-row justify-end space-x-4 mt-2 p-2">
                 <a href="https://www.instagram.com/" target="_blank">
                   <img
                     src={insta}
