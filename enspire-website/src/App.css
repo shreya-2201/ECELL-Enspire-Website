@@ -117,10 +117,22 @@
       transform: scale(1);
     }
     50%{
-      transform: scale(1.15);
+      transform: scale(1.05);
     }
    }
   
+
+.name{
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.team-member:hover + .name {
+  opacity: 1;
+}
+.team-member:hover{
+  opacity:0.3;
+}
+
 
   
 

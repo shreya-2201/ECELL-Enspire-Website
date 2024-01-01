@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../assets/enspire-logo-circle.png";
+import logo from "../assets/E-logo-circle.png";
 import insta from "../assets/insta.png";
 import facebook from "../assets/facebook.png";
 import twitter from "../assets/twitter.png";
@@ -9,7 +9,7 @@ function Footer() {
   return (
     <>
       <div>
-        <div className="w-full bg-purple-900/70 backdrop-blur-sm py-8 text-center">
+        <div className="w-full bg-purple-900/80 backdrop-blur-sm py-8 text-center">
           <div className="flex justify-center items-center flex-col">
             <img src={logo} className="App-logo h-12 w-12 p-1" alt="logo" />
 
