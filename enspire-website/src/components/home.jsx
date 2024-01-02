@@ -25,7 +25,7 @@ function Home() {
             <img
               src={logo}
               alt=""
-              className="w-20 h-20 md:w-40 md:h-40 lg:w-60 lg:h-60 opacity-60 shadow-2xl"
+              className="w-20 h-20 md:w-40 md:h-40 lg:w-60 lg:h-60 opacity-60 shadow-2xl logo"
             />
           </div>
           <div className="absolute w-full h-full flex flex-col items-center justify-center m-4">

@@ -127,7 +127,7 @@ function Header() {
               </NavLink>
               
               <div className="flex flex-row justify-end space-x-4 mt-2 p-2">
-                <a href="https://www.instagram.com/" target="_blank">
+                <a href="https://www.instagram.com/ecell_iiitl?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA==" target="_blank">
                   <img
                     src={insta}
                     alt=""
