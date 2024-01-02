@@ -35,7 +35,7 @@ function Home() {
             <div className="heading text-white text-4xl md:text-6xl lg:text-8xl font-bold pl-4 lg:pl-0">
               ENSPIRE
             </div>
-            <div className="subheading text-white text-2xl md:text-3xl font-bold m-4 p-1 bg-purple-900/70">
+            <div className="subheading text-white text-2xl md:text-3xl font-bold m-4 p-2 bg-purple-900/60">
               Innovation Odyssey
             </div>
             <div></div>

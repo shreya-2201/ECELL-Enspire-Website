@@ -22,8 +22,8 @@ function Sponsers() {
             <a href="https://wazirx.com/" target="_blank" className="flex flex-col items-center justify-center rounded overflow-hidden bg-purple-800/50 h-48 shadow-2xl text-2xl text-white icon"><img src={wazirx} alt="" className="w-full h-auto md:w-1/2 lg:w-1/3 m-4"/>WAZIRX</a>
         </div>
         <div className="flex flex-col space-y-3 items-center justify-center m-5">
-            <h1 className="text-white text-4xl m-6 ">Previous Stats</h1>
-        <table className="border-collapse bg-purple-800/60 text-white shadow-2xl">
+            <h1 className="text-white text-4xl m-3 ">Previous Stats</h1>
+        <table className="border-collapse bg-purple-800/60 text-white shadow-2xl hover">
           <thead>
             <tr>
               <th className="p-2 border-b border-white">Event</th>
