@@ -1,8 +1,8 @@
 # React + Vite
 Thia is Enspire website made as an assignment for the ecell developers team.
 To open it us the following commands
-cd enspire-website
-npm run dev
+->cd enspire-website
+->npm run dev
 
 
 
