@@ -53,35 +53,35 @@ function Home() {
         <div className="flex justify-center items-center m-4 text-white text-4xl">Educational Workshops</div>
         <div className="flex justify-center items-center m-2 text-white text-4xl">~SPEAKERS~</div>
         <div className="flex justify-center items-center m-5 flex-wrap">
-          <div className="flex flex-col items-center m-4">
+          <div className="flex flex-col items-center m-6">
             <img
               src={aman}
               alt="Admya"
-              className="w-60 shadow-2xl"
+              className="w-60 shadow-2xl icon"
             />
             <p className="text-white mt-2 text-2xl bg-purple-900/70 p-2">Aman Dhattarwal</p>
           </div>
-          <div className="flex flex-col items-center m-4">
+          <div className="flex flex-col items-center m-6">
             <img
               src={kalpit}
               alt="DevShah"
-              className="w-60 shadow-2xl"
+              className="w-60 shadow-2xl icon"
             />
             <p className="text-white mt-2 text-2xl bg-purple-900/70 p-2">Kalpit Veerwal</p>
           </div>
-          <div className="flex flex-col items-center m-4">
+          <div className="flex flex-col items-center m-6">
             <img
               src={deepshika}
               alt="Admya"
-              className="w-60 shadow-2xl"
+              className="w-60 shadow-2xl icon"
             />
             <p className="text-white mt-2 text-2xl bg-purple-900/70 p-2">Deepshika Kumar</p>
           </div>
-          <div className="flex flex-col items-center m-4">
+          <div className="flex flex-col items-center m-6">
             <img
               src={sanjeev}
               alt="Admya"
-              className="w-60 shadow-2xl"
+              className="w-60 shadow-2xl icon"
             />
             <p className="text-white mt-2 text-2xl bg-purple-900/70 p-2">Sanjeev Bikchandani</p>
           </div>
